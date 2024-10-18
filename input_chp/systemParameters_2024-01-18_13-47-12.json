@@ -1,0 +1,204 @@
+{
+	"inputsSystem": [],
+	"minPowerSystemInput": [0,0],
+	"maxPowerSystemInput": [100000,100000],
+	"minPowerSystemOutput": 0.0,
+	"maxPowerSystemOutput": 1.7976931348623157E308,
+	"temporalResolutionOptimizationModel": 0.125,
+	"resourceParameters": [
+		{
+			"name": "gasfired_generator",
+			"numberOfInputs": 1,
+			"energyCarrierInputs": ["Power"],
+				"energyCarrierOutput": "Heat",
+			"minPowerInput": 0.0,
+			"minPowerInputs": [
+				0.0
+			],
+			"maxPowerInput": 2911.981294971274,
+			"maxPowerInputs": [
+				2911.981294971274
+			],
+			"minPowerOutput": 0.0,
+			"maxPowerOutput": 1101.1467625718144,
+			"minRampInput": 0.0,
+			"maxRampInput": 1.7976931348623157E308,
+			"minRampOutput": 0.0,
+			"maxRampOutput": 1.7976931348623157E308,
+			"latencyOfOutput": 0,
+			"target": 6000,
+			"targetFlow": "Output",
+			"numerOfInputOfTarget": -1,
+			"systemStates": [
+				{
+					"stateID": 0,
+					"stateName": "state0",
+					"maxStateDuration": 9999.0,
+					"minStateDuration": 65.0,
+					"maxStateDurationInH": 9999.0,
+					"minStateDurationInH": 8.1499199999962,
+					"followerStates": [
+						1
+					],
+					"latency": 0,
+					"minPowerInput": 0.0,
+					"maxPowerInput": 2911.981294971274,
+					"maxPowerOutput": 1101.1467625718144,
+					"minRampInput": 1.8358502030628377E-6,
+					"maxRampInput": 128586.95638028829,
+					"minRampOutput": 22.14774831657662,
+					"maxRampOutput": 24979.016829206583,
+					"inputIsEqualToOutput": false
+				},
+				{
+					"stateID": 1,
+					"stateName": "state1",
+					"maxStateDuration": 9999.0,
+					"minStateDuration": 4.0,
+					"maxStateDurationInH": 9999.0,
+					"minStateDurationInH": 0.5001599999377504,
+					"followerStates": [
+						0
+					],
+					"latency": 0,
+					"minPowerInput": 0.0,
+					"maxPowerInput": 1452.0719384284387,
+					"maxPowerOutput": 536.1798546316012,
+					"minRampInput": 0.0,
+					"maxRampInput": 1.7976931348623157E308,
+					"minRampOutput": 8.484686850745106,
+					"maxRampOutput": 8.484686850745106,
+					"inputIsEqualToOutput": false
+				}
+			],
+			"numberOfSystemStates": 0,
+			"initialSystemState": 0,
+			"isSecondaryResource": false,
+			"primaryResource": "",
+			"efficiency": 0.0,
+			"slope": 0.382481273377147,
+			"intercept": -18.401152353187,
+			"plaList": [
+				[
+					{
+						"lowerBound": 0.0,
+						"upperBound": 0.0,
+						"slope": 0.382481273377147,
+						"intercept": -18.401152353187
+					}
+				]
+			],
+			"isStorage": false,
+			"maximumStorageCapacity": 0.0,
+			"minimumStorageCapacity": 0.0,
+			"unitConversionFactorStorage": 1.0,
+			"capacitySetPoints": {},
+			"staticEnergyLoss": 0.0,
+			"dynamicEnergyLoss": 0.0,
+			"referenceDynamicEnergyLoss": 0.0,
+			"efficiencyInputStorage": 1.0,
+			"efficiencyOutputStorage": 1.0,
+			"efficiencyOutputReciprocal": 1.0,
+			"degradation": 0.0
+		},
+		{
+			"name": "heat_exchanger",
+			"numberOfInputs": 1,
+			"energyCarrierInputs": ["Heat"],
+				"energyCarrierOutput": "Heat",
+			"minPowerInput": 0.0,
+			"minPowerInputs": [
+				0.0
+			],
+			"maxPowerInput": 1101.1467625718144,
+			"maxPowerInputs": [
+				1101.1467625718144
+			],
+			"minPowerOutput": 0.0,
+			"maxPowerOutput": 1745.5071941449794,
+			"minRampInput": 0.0,
+			"maxRampInput": 1.7976931348623157E308,
+			"minRampOutput": 0.0,
+			"maxRampOutput": 1.7976931348623157E308,
+			"latencyOfOutput": 0,
+			"target": 0.0,
+			"numerOfInputOfTarget": 0,
+			"systemStates": [],
+			"numberOfSystemStates": 0,
+			"initialSystemState": 0,
+			"isSecondaryResource": false,
+			"primaryResource": "",
+			"efficiency": 0.0,
+			"slope": 1.14816801461443,
+			"intercept": 55.1904481311783,
+			"plaList": [
+				[
+					{
+						"lowerBound": 0.0,
+						"upperBound": 0.0,
+						"slope": 1.14816801461443,
+						"intercept": 55.1904481311783
+					}
+				]
+			],
+			"isStorage": false,
+			"maximumStorageCapacity": 0.0,
+			"minimumStorageCapacity": 0.0,
+			"unitConversionFactorStorage": 1.0,
+			"capacitySetPoints": {},
+			"staticEnergyLoss": 0.0,
+			"dynamicEnergyLoss": 0.0,
+			"referenceDynamicEnergyLoss": 0.0,
+			"efficiencyInputStorage": 1.0,
+			"efficiencyOutputStorage": 1.0,
+			"efficiencyOutputReciprocal": 1.0,
+			"degradation": 0.0
+		}
+	],
+	"dependencies": [
+		{
+			"relevantInputs": [
+				"heat_exchanger"
+			],
+			"inputProcessInformation": [],
+			"relevantOutputs": [
+				"gasfired_generator"
+			],
+			"outputProcessInformation": [],
+			"typeOfDependency": "correlative"
+		},
+		{
+			"relevantInputs": [
+				"gasfired_generator"
+			],
+			"inputProcessInformation": [],
+			"relevantOutputs": [
+				"SystemInput-0"
+			],
+			"outputProcessInformation": [],
+			"typeOfDependency": "correlative"
+		},
+		{
+			"relevantInputs": [
+				"SystemOutput-0"
+			],
+			"inputProcessInformation": [],
+			"relevantOutputs": [
+				"gasfired_generator"
+			],
+			"outputProcessInformation": [],
+			"typeOfDependency": "correlative"
+		},
+		{
+			"relevantInputs": [
+				"SystemOutput-1"
+			],
+			"inputProcessInformation": [],
+			"relevantOutputs": [
+				"heat_exchanger"
+			],
+			"outputProcessInformation": [],
+			"typeOfDependency": "correlative"
+		}
+	]
+}

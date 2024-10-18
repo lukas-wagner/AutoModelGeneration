@@ -1,0 +1,465 @@
+[
+    {
+        "$type": "fpb:Project",
+        "name": "FPBJS_Project",
+        "targetNamespace": "http://www.hsu-ifa.de/fpbjs",
+        "entryPoint": "6ac8e39f-9f17-43bc-87ea-02af5cf34206"
+    },
+    {
+        "process": {
+            "$type": "fpb:Process",
+            "id": "6ac8e39f-9f17-43bc-87ea-02af5cf34206",
+            "elementsContainer": [
+                "4a07c8a7-d59d-4fd3-ad0d-04e8ea8ae2dd",
+                "f06a1de3-6ae6-4b5f-bc2e-3a0351169c2f",
+                "d3f697f7-a0af-4e80-af29-6c8cf96be9aa",
+                "c4fb53a0-fd5a-4cbd-9d75-503d3d45dc9a",
+                "d3d8f6c0-5e16-477c-bb7a-5b7b09309e76"
+            ],
+            "isDecomposedProcessOperator": null,
+            "consistsOfStates": [
+                "b95d63cb-097a-437b-b733-11fc5a187a6b",
+                "0cbb0d76-08b6-4b36-a332-81fed7c38d14"
+            ],
+            "consistsOfSystemLimit": "4a07c8a7-d59d-4fd3-ad0d-04e8ea8ae2dd",
+            "consistsOfProcesses": [],
+            "consistsOfProcessOperator": [
+                "8630f382-2cd0-4963-b081-7996fd981a9e",
+                "27ce0e2d-a871-49eb-a99f-5490c26e0f0e"
+            ]
+        },
+        "elementDataInformation": [
+            {
+                "$type": "fpb:SystemLimit",
+                "id": "4a07c8a7-d59d-4fd3-ad0d-04e8ea8ae2dd",
+                "elementsContainer": [
+                    "b95d63cb-097a-437b-b733-11fc5a187a6b",
+                    "0cbb0d76-08b6-4b36-a332-81fed7c38d14",
+                    "8630f382-2cd0-4963-b081-7996fd981a9e",
+                    "ead1175c-7024-45e7-a0d2-bf7c80340205",
+                    "2ed03f94-5d10-4c24-8f05-eddc077f8d91",
+                    "8bf15598-6ab4-464b-9c31-980303355fc0",
+                    "0fea960d-c2bf-4efd-9bf2-e67bc7f30557",
+                    "27ce0e2d-a871-49eb-a99f-5490c26e0f0e"
+                ]
+            },
+            {
+                "$type": "fpb:TechnicalResource",
+                "id": "f06a1de3-6ae6-4b5f-bc2e-3a0351169c2f",
+                "identification": {
+                    "$type": "fpb:Identification",
+                    "uniqueIdent": "f06a1de3-6ae6-4b5f-bc2e-3a0351169c2f",
+                    "longName": "RefrigerationMachine1",
+                    "shortName": "RefrigerationMachine1",
+                    "versionNumber": "",
+                    "revisionNumber": ""
+                },
+                "isAssignedTo": [
+                    "8630f382-2cd0-4963-b081-7996fd981a9e"
+                ],
+                "incoming": [],
+                "outgoing": [
+                    "d3d8f6c0-5e16-477c-bb7a-5b7b09309e76"
+                ],
+                "name": "RefrigerationMachine1",
+                "characteristics": []
+            },
+            {
+                "$type": "fpb:TechnicalResource",
+                "id": "d3f697f7-a0af-4e80-af29-6c8cf96be9aa",
+                "identification": {
+                    "$type": "fpb:Identification",
+                    "uniqueIdent": "d3f697f7-a0af-4e80-af29-6c8cf96be9aa",
+                    "longName": "RefrigerationMachine2",
+                    "shortName": "RefrigerationMachine2",
+                    "versionNumber": "",
+                    "revisionNumber": ""
+                },
+                "isAssignedTo": [
+                    "27ce0e2d-a871-49eb-a99f-5490c26e0f0e"
+                ],
+                "incoming": [],
+                "outgoing": [
+                    "c4fb53a0-fd5a-4cbd-9d75-503d3d45dc9a"
+                ],
+                "name": "RefrigerationMachine2",
+                "characteristics": []
+            },
+            {
+                "$type": "fpb:Usage",
+                "id": "c4fb53a0-fd5a-4cbd-9d75-503d3d45dc9a",
+                "sourceRef": "d3f697f7-a0af-4e80-af29-6c8cf96be9aa",
+                "targetRef": "27ce0e2d-a871-49eb-a99f-5490c26e0f0e"
+            },
+            {
+                "$type": "fpb:Usage",
+                "id": "d3d8f6c0-5e16-477c-bb7a-5b7b09309e76",
+                "sourceRef": "f06a1de3-6ae6-4b5f-bc2e-3a0351169c2f",
+                "targetRef": "8630f382-2cd0-4963-b081-7996fd981a9e"
+            },
+            {
+                "$type": "fpb:Energy",
+                "id": "b95d63cb-097a-437b-b733-11fc5a187a6b",
+                "identification": {
+                    "$type": "fpb:Identification",
+                    "uniqueIdent": "b95d63cb-097a-437b-b733-11fc5a187a6b",
+                    "longName": "Power",
+                    "shortName": "Power",
+                    "versionNumber": "",
+                    "revisionNumber": ""
+                },
+                "isAssignedTo": [
+                    "8630f382-2cd0-4963-b081-7996fd981a9e",
+                    "27ce0e2d-a871-49eb-a99f-5490c26e0f0e"
+                ],
+                "incoming": [],
+                "outgoing": [
+                    "ead1175c-7024-45e7-a0d2-bf7c80340205",
+                    "2ed03f94-5d10-4c24-8f05-eddc077f8d91"
+                ],
+                "name": "Power",
+                "characteristics": []
+            },
+            {
+                "$type": "fpb:Energy",
+                "id": "0cbb0d76-08b6-4b36-a332-81fed7c38d14",
+                "identification": {
+                    "$type": "fpb:Identification",
+                    "uniqueIdent": "0cbb0d76-08b6-4b36-a332-81fed7c38d14",
+                    "longName": "ColdWater",
+                    "shortName": "ColdWater",
+                    "versionNumber": "",
+                    "revisionNumber": ""
+                },
+                "isAssignedTo": [
+                    "27ce0e2d-a871-49eb-a99f-5490c26e0f0e",
+                    "8630f382-2cd0-4963-b081-7996fd981a9e"
+                ],
+                "incoming": [
+                    "8bf15598-6ab4-464b-9c31-980303355fc0",
+                    "0fea960d-c2bf-4efd-9bf2-e67bc7f30557"
+                ],
+                "outgoing": [],
+                "name": "ColdWater",
+                "characteristics": []
+            },
+            {
+                "$type": "fpb:ProcessOperator",
+                "id": "8630f382-2cd0-4963-b081-7996fd981a9e",
+                "identification": {
+                    "$type": "fpb:Identification",
+                    "uniqueIdent": "8630f382-2cd0-4963-b081-7996fd981a9e",
+                    "longName": "",
+                    "shortName": "Refrigeration1",
+                    "versionNumber": "",
+                    "revisionNumber": ""
+                },
+                "isAssignedTo": [
+                    "f06a1de3-6ae6-4b5f-bc2e-3a0351169c2f"
+                ],
+                "incoming": [
+                    "ead1175c-7024-45e7-a0d2-bf7c80340205",
+                    "d3d8f6c0-5e16-477c-bb7a-5b7b09309e76"
+                ],
+                "outgoing": [
+                    "0fea960d-c2bf-4efd-9bf2-e67bc7f30557"
+                ],
+                "name": "Refrigeration1"
+            },
+            {
+                "$type": "fpb:ParallelFlow",
+                "id": "ead1175c-7024-45e7-a0d2-bf7c80340205",
+                "inTandemWith": [
+                    "2ed03f94-5d10-4c24-8f05-eddc077f8d91"
+                ],
+                "sourceRef": "b95d63cb-097a-437b-b733-11fc5a187a6b",
+                "targetRef": "8630f382-2cd0-4963-b081-7996fd981a9e"
+            },
+            {
+                "$type": "fpb:ParallelFlow",
+                "id": "2ed03f94-5d10-4c24-8f05-eddc077f8d91",
+                "inTandemWith": [
+                    "ead1175c-7024-45e7-a0d2-bf7c80340205"
+                ],
+                "sourceRef": "b95d63cb-097a-437b-b733-11fc5a187a6b",
+                "targetRef": "27ce0e2d-a871-49eb-a99f-5490c26e0f0e"
+            },
+            {
+                "$type": "fpb:ParallelFlow",
+                "id": "8bf15598-6ab4-464b-9c31-980303355fc0",
+                "inTandemWith": [],
+                "sourceRef": "27ce0e2d-a871-49eb-a99f-5490c26e0f0e",
+                "targetRef": "0cbb0d76-08b6-4b36-a332-81fed7c38d14"
+            },
+            {
+                "$type": "fpb:ParallelFlow",
+                "id": "0fea960d-c2bf-4efd-9bf2-e67bc7f30557",
+                "inTandemWith": [],
+                "sourceRef": "8630f382-2cd0-4963-b081-7996fd981a9e",
+                "targetRef": "0cbb0d76-08b6-4b36-a332-81fed7c38d14"
+            },
+            {
+                "$type": "fpb:ProcessOperator",
+                "id": "27ce0e2d-a871-49eb-a99f-5490c26e0f0e",
+                "identification": {
+                    "$type": "fpb:Identification",
+                    "uniqueIdent": "27ce0e2d-a871-49eb-a99f-5490c26e0f0e",
+                    "longName": "",
+                    "shortName": "Refrigeration2",
+                    "versionNumber": "",
+                    "revisionNumber": ""
+                },
+                "isAssignedTo": [
+                    "d3f697f7-a0af-4e80-af29-6c8cf96be9aa"
+                ],
+                "incoming": [
+                    "2ed03f94-5d10-4c24-8f05-eddc077f8d91",
+                    "c4fb53a0-fd5a-4cbd-9d75-503d3d45dc9a"
+                ],
+                "outgoing": [
+                    "8bf15598-6ab4-464b-9c31-980303355fc0"
+                ],
+                "name": "Refrigeration2",
+                "characteristics": []
+            }
+        ],
+        "elementVisualInformation": [
+            {
+                "id": "4a07c8a7-d59d-4fd3-ad0d-04e8ea8ae2dd",
+                "width": 650,
+                "height": 700,
+                "type": "fpb:SystemLimit",
+                "x": 489,
+                "y": 219
+            },
+            {
+                "id": "f06a1de3-6ae6-4b5f-bc2e-3a0351169c2f",
+                "width": 150,
+                "height": 80,
+                "type": "fpb:TechnicalResource",
+                "x": 251,
+                "y": 367
+            },
+            {
+                "id": "d3f697f7-a0af-4e80-af29-6c8cf96be9aa",
+                "width": 150,
+                "height": 80,
+                "type": "fpb:TechnicalResource",
+                "x": 1269,
+                "y": 563
+            },
+            {
+                "id": "c4fb53a0-fd5a-4cbd-9d75-503d3d45dc9a",
+                "type": "fpb:Usage",
+                "waypoints": [
+                    {
+                        "original": {
+                            "x": 1269,
+                            "y": 603
+                        },
+                        "x": 1269,
+                        "y": 603
+                    },
+                    {
+                        "x": 1113,
+                        "y": 603
+                    },
+                    {
+                        "x": 1113,
+                        "y": 618
+                    },
+                    {
+                        "original": {
+                            "x": 957,
+                            "y": 618
+                        },
+                        "x": 957,
+                        "y": 618
+                    }
+                ]
+            },
+            {
+                "id": "d3d8f6c0-5e16-477c-bb7a-5b7b09309e76",
+                "type": "fpb:Usage",
+                "waypoints": [
+                    {
+                        "original": {
+                            "x": 401,
+                            "y": 407
+                        },
+                        "x": 401,
+                        "y": 407
+                    },
+                    {
+                        "x": 515,
+                        "y": 407
+                    },
+                    {
+                        "x": 515,
+                        "y": 434
+                    },
+                    {
+                        "original": {
+                            "x": 628,
+                            "y": 434
+                        },
+                        "x": 628,
+                        "y": 434
+                    }
+                ]
+            },
+            {
+                "id": "b95d63cb-097a-437b-b733-11fc5a187a6b",
+                "width": 50,
+                "height": 50,
+                "type": "fpb:Energy",
+                "x": 697,
+                "y": 190
+            },
+            {
+                "id": "0cbb0d76-08b6-4b36-a332-81fed7c38d14",
+                "width": 50,
+                "height": 50,
+                "type": "fpb:Energy",
+                "x": 766,
+                "y": 894
+            },
+            {
+                "id": "8630f382-2cd0-4963-b081-7996fd981a9e",
+                "width": 150,
+                "height": 80,
+                "type": "fpb:ProcessOperator",
+                "x": 628,
+                "y": 394
+            },
+            {
+                "id": "ead1175c-7024-45e7-a0d2-bf7c80340205",
+                "type": "fpb:ParallelFlow",
+                "waypoints": [
+                    {
+                        "original": {
+                            "x": 722,
+                            "y": 240
+                        },
+                        "x": 722,
+                        "y": 240
+                    },
+                    {
+                        "x": 722,
+                        "y": 317
+                    },
+                    {
+                        "x": 703,
+                        "y": 317
+                    },
+                    {
+                        "original": {
+                            "x": 703,
+                            "y": 394
+                        },
+                        "x": 703,
+                        "y": 394
+                    }
+                ]
+            },
+            {
+                "id": "2ed03f94-5d10-4c24-8f05-eddc077f8d91",
+                "type": "fpb:ParallelFlow",
+                "waypoints": [
+                    {
+                        "original": {
+                            "x": 722,
+                            "y": 240
+                        },
+                        "x": 722,
+                        "y": 240
+                    },
+                    {
+                        "x": 722,
+                        "y": 317
+                    },
+                    {
+                        "x": 882,
+                        "y": 317
+                    },
+                    {
+                        "original": {
+                            "x": 882,
+                            "y": 578
+                        },
+                        "x": 882,
+                        "y": 578
+                    }
+                ]
+            },
+            {
+                "id": "8bf15598-6ab4-464b-9c31-980303355fc0",
+                "type": "fpb:ParallelFlow",
+                "waypoints": [
+                    {
+                        "original": {
+                            "x": 882,
+                            "y": 658
+                        },
+                        "x": 882,
+                        "y": 658
+                    },
+                    {
+                        "x": 882,
+                        "y": 776
+                    },
+                    {
+                        "x": 791,
+                        "y": 776
+                    },
+                    {
+                        "original": {
+                            "x": 791,
+                            "y": 894
+                        },
+                        "x": 791,
+                        "y": 894
+                    }
+                ]
+            },
+            {
+                "id": "0fea960d-c2bf-4efd-9bf2-e67bc7f30557",
+                "type": "fpb:ParallelFlow",
+                "waypoints": [
+                    {
+                        "original": {
+                            "x": 703,
+                            "y": 474
+                        },
+                        "x": 703,
+                        "y": 474
+                    },
+                    {
+                        "x": 703,
+                        "y": 684
+                    },
+                    {
+                        "x": 791,
+                        "y": 684
+                    },
+                    {
+                        "original": {
+                            "x": 791,
+                            "y": 894
+                        },
+                        "x": 791,
+                        "y": 894
+                    }
+                ]
+            },
+            {
+                "id": "27ce0e2d-a871-49eb-a99f-5490c26e0f0e",
+                "width": 150,
+                "height": 80,
+                "type": "fpb:ProcessOperator",
+                "x": 807,
+                "y": 578
+            }
+        ]
+    }
+]
